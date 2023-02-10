@@ -1,0 +1,115 @@
+/* CSS ESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --verified: hsl(333, 80%, 67%);
+  --box-background: hsl(300, 43%, 22%);
+  --white: hsl(0, 0%, 100%);
+  --span_bac: hsl(300, 24%, 96%);
+}
+body {
+  max-width: 800px;
+  margin: 30px auto;
+}
+/* Fitst devision */
+.review {
+  display: flex;
+  justify-content: space-between;
+}
+span {
+  display: block;
+  background-color: var(--span_bac);
+  margin: 10px;
+  padding: 10px 40px 10px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.one {
+  position: relative;
+  right: 80px;
+}
+.two {
+  position: relative;
+  right: 40px;
+}
+.detail {
+  width: 200px;
+}
+
+.detail h2 {
+  color: var(--box-background);
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+@media (max-width: 640px) {
+  .review {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .one {
+    position: unset;
+  }
+  .two {
+    position: unset;
+  }
+  .Images1{
+    position: unset;
+  }
+  .Images2{
+    position: unset;
+  }
+  .move-left{
+    flex-direction: column;
+  }
+}
+.Images1 {
+  background-color: var(--box-background);
+  /* display: flex; */
+  color: white;
+  width: 400px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.Images2 {
+  background-color: var(--box-background);
+  /* display: flex; */
+  color: white;
+  width: 400px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  top: 10px;
+}
+.Images3 {
+  background-color: var(--box-background);
+  /* display: flex; */
+  position: relative;
+  color: white;
+  width: 400px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  top: 20px;
+}
+.move-left {
+  display: flex;
+}
+.sam {
+ position: relative;
+}
+
+img {
+  border-radius: 50%;
+  max-width: 50px;
+}
+.it, .verified {
+  position: relative;
+  left: 70px;
+  bottom: 50px;
+}
